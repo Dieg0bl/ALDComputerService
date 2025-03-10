@@ -1,0 +1,9 @@
+# Excluir carpetas generadas
+/build/
+/dist/
+
+# Excluir configuraciones locales de NetBeans
+/nbproject/private/
+
+# Excluir archivos compilados
+*.class
