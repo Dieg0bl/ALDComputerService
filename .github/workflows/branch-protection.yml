@@ -1,0 +1,37 @@
+name: Branch Protection Enforcement
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  enforce-protection:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        
+    - name: Build with Ant
+      run: ant jar
+      
+    - name: Verify no direct pushes to main
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main' && github.actor != 'dependabot[bot]'
+      run: |
+        echo "Direct pushes to main branch are not allowed"
+        echo "Please create a pull request instead"
+        exit 1
+        
+    - name: Check for required approvals (PR only)
+      if: github.event_name == 'pull_request'
+      run: |
+        echo "Pull request detected for main branch"
+        echo "Ensure proper review before merging"

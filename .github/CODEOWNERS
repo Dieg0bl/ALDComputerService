@@ -1,0 +1,25 @@
+# Global code owners for the ALDComputerService repository
+# This ensures all changes require review before merging to main
+
+# Repository owner has ownership of all files
+* @Dieg0bl
+
+# Specific ownership for critical files
+/.github/ @Dieg0bl
+/build.xml @Dieg0bl
+/manifest.mf @Dieg0bl
+/README.md @Dieg0bl
+
+# Source code ownership
+/src/ @Dieg0bl
+
+# Documentation ownership
+/docs/ @Dieg0bl
+/help/ @Dieg0bl
+
+# Configuration files
+*.xml @Dieg0bl
+*.properties @Dieg0bl
+*.json @Dieg0bl
+*.yml @Dieg0bl
+*.yaml @Dieg0bl

@@ -1,0 +1,47 @@
+{
+  "repository": {
+    "name": "ALDComputerService",
+    "owner": "Dieg0bl",
+    "visibility": "public",
+    "archived": true,
+    "description": "ALDComputerService - Aplicación para gestión integral de equipos y mantenimientos en centros de informática",
+    "topics": [
+      "java",
+      "netbeans",
+      "computer-service",
+      "maintenance-management",
+      "desktop-application"
+    ],
+    "default_branch": "main",
+    "settings": {
+      "has_issues": false,
+      "has_projects": false,
+      "has_wiki": false,
+      "has_downloads": true,
+      "allow_squash_merge": true,
+      "allow_merge_commit": false,
+      "allow_rebase_merge": false,
+      "delete_branch_on_merge": true
+    },
+    "branch_protection": {
+      "main": {
+        "required_status_checks": {
+          "strict": true,
+          "contexts": [
+            "build",
+            "documentation"
+          ]
+        },
+        "enforce_admins": true,
+        "required_pull_request_reviews": {
+          "required_approving_review_count": 1,
+          "dismiss_stale_reviews": true,
+          "require_code_owner_reviews": false
+        },
+        "restrictions": null,
+        "allow_force_pushes": false,
+        "allow_deletions": false
+      }
+    }
+  }
+}
