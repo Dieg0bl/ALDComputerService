@@ -1,0 +1,20 @@
+DESCRIPCIÓN RECOMENDADA PARA LA SECCIÓN "ABOUT" DEL REPOSITORIO:
+
+Sistema de gestión integral para centros de servicio técnico informático desarrollado en Java. Permite administrar inventarios de equipos (Desktop, Laptop, Server), gestionar solicitudes de reparación, generar reportes en PDF y administrar datos de establecimientos. Construido con Java Swing, MariaDB, JasperReports y arquitectura MVC.
+
+JUSTIFICACIÓN:
+- Explica claramente el propósito (gestión de centros de servicio técnico)
+- Menciona las funcionalidades principales (inventarios, reparaciones, reportes)
+- Lista las tecnologías clave (Java, Swing, MariaDB, JasperReports, MVC)
+- Es concisa pero informativa (aproximadamente 280 caracteres)
+- Comprensible tanto para desarrolladores como reclutadores
+- Destaca el valor técnico y de negocio del proyecto
+
+PALABRAS CLAVE INCLUIDAS:
+- Java (lenguaje principal)
+- Swing (interfaz gráfica)
+- MariaDB (base de datos)
+- JasperReports (generación de reportes)
+- MVC (patrón arquitectónico)
+- Gestión/Management (propósito de negocio)
+- Sistema integral (alcance completo)
